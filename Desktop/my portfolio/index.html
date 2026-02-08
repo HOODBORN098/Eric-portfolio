@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Eric Wambua - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Eric</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a
+                        href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a
+                        href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a
+                        href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a
+                        href="#services">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a
+                        href="#projects">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="550">
+                    <a href="Eric_Wambua_CV.pdf" download>Download CV</a>
+                </div>
+
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a
+                        href="#contact">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home" onclick="cancel()">Home</a>
+                <a href="#about" onclick="cancel()">About</a>
+                <a href="#skills" onclick="cancel()">Skills</a>
+                <a href="#services" onclick="cancel()">Services</a>
+                <a href="#projects" onclick="cancel()">Projects</a>
+                <a href="#contact" onclick="cancel()">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="main.png" alt="Eric Wambua">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Eric Wambua</span>
+                </h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a
+                    <span></span>
+                </div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">I am a creative developer and
+                    visual storyteller based in Nairobi. I specialize in building modern websites, mobile apps, and
+                    integrating complex APIs to create seamless digital experiences.</p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://www.instagram.com/hoodborn_visuals_media" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/hoodborn_visuals_media" target="_blank"
+                        title="hoodborn photographe"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/search/results/all/?keywords=Eric%20Wambua%20Ujuzi%20Techlabz"
+                        target="_blank" title="Eric (Ujuzi Techlabz) Wambua"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <button onclick="window.open('Eric_Wambua_CV.pdf', '_blank')">Download CV</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="main-container">
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">About <span>Me</span></h1>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    I am Eric Wambua, a passionate developer from Nairobi with a keen eye for design. My journey began
+                    with a curiosity for how things work, and it has evolved into a career where I create beautiful and
+                    functional digital experiences. I specialize in building responsive websites and mobile applications
+                    that
+                    are not only visually appealing but also user-friendly. With a strong foundation in modern web
+                    technologies, I am constantly learning and adapting to new trends in the industry to deliver the
+                    best results for my clients.
+                </p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://www.instagram.com/hoodborn_visuals_media" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/hoodborn_visuals_media" target="_blank"
+                        title="hoodborn photographe"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/search/results/all/?keywords=Eric%20Wambua%20Ujuzi%20Techlabz"
+                        target="_blank" title="Eric (Ujuzi Techlabz) Wambua"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <button onclick="window.open('Eric_Wambua_CV.pdf', '_blank')">Download CV</button>
+                </div>
+            </div>
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="about.png" alt="About Me">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="skills.png" alt="Skills">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">My <span>Skills</span></h1>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    Here are some of the technologies and tools I work with:
+                </p>
+                <ul style="list-style: none; margin-top: 10px;" data-aos="fade-right" data-aos-duration="1000"
+                    data-aos-delay="1100">
+                    <li><i class="fa-brands fa-html5" style="color: rgb(109, 67, 0); margin-right: 10px;"></i> HTML5
+                    </li>
+                    <li><i class="fa-brands fa-css3-alt" style="color: rgb(109, 67, 0); margin-right: 10px;"></i> CSS3
+                    </li>
+                    <li><i class="fa-brands fa-js" style="color: rgb(109, 67, 0); margin-right: 10px;"></i> JavaScript
+                    </li>
+                    <li><i class="fa-brands fa-react" style="color: rgb(109, 67, 0); margin-right: 10px;"></i> React.js
+                    </li>
+                    <li><i class="fa-brands fa-node" style="color: rgb(109, 67, 0); margin-right: 10px;"></i> Node.js
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="main-container">
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">My <span>Services</span></h1>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    I offer a range of services to help you achieve your digital goals:
+                </p>
+                <ul style="list-style: none; margin-top: 10px;" data-aos="fade-right" data-aos-duration="1000"
+                    data-aos-delay="1100">
+                    <li><i class="fa-solid fa-code" style="color: rgb(109, 67, 0); margin-right: 10px;"></i> Web
+                        Development</li>
+                    <li><i class="fa-solid fa-paintbrush" style="color: rgb(109, 67, 0); margin-right: 10px;"></i> UI/UX
+                        Design</li>
+                    <li><i class="fa-solid fa-video" style="color: rgb(109, 67, 0); margin-right: 10px;"></i> Content
+                        Creation</li>
+                    <li><i class="fa-solid fa-mobile-screen" style="color: rgb(109, 67, 0); margin-right: 10px;"></i>
+                        Responsive Design</li>
+                    <li><i class="fa-solid fa-mobile" style="color: rgb(109, 67, 0); margin-right: 10px;"></i> App
+                        Development</li>
+                    <li><i class="fa-solid fa-network-wired" style="color: rgb(109, 67, 0); margin-right: 10px;"></i>
+                        API
+                        Integration</li>
+                </ul>
+            </div>
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="services.png" alt="Services">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="main-container" style="flex-direction: column;">
+            <h1 data-aos="fade-down" data-aos-duration="1000" style="text-align: center; margin-bottom: 50px;">My
+                <span>Projects</span>
+            </h1>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="about.png" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project One</h3>
+                        <p>A brief description of the project goes here. Explain what technologies were used and the
+                            problem it solves.</p>
+                        <button onclick="window.location.href='#'">View Project</button>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="skills.png" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Two</h3>
+                        <p>A brief description of the project goes here. Explain what technologies were used and the
+                            problem it solves.</p>
+                        <button onclick="window.location.href='#'">View Project</button>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="project-image">
+                        <img src="about.png" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Three</h3>
+                        <p>A brief description of the project goes here. Explain what technologies were used and the
+                            problem it solves.</p>
+                        <button onclick="window.location.href='#'">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="main-container">
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Contact <span>Me</span></h1>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    Get in touch with me:
+                </p>
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1050"
+                    style="margin-bottom: 20px;">
+                    <p style="margin: 5px 0;"><i class="fa-solid fa-envelope"
+                            style="color: rgb(109, 67, 0); margin-right: 10px;"></i> ericwambua098@gmail.com</p>
+                    <p style="margin: 5px 0;"><i class="fa-solid fa-phone"
+                            style="color: rgb(109, 67, 0); margin-right: 10px;"></i> +254 112 394 362</p>
+                    <p style="margin: 5px 0;"><i class="fa-solid fa-location-dot"
+                            style="color: rgb(109, 67, 0); margin-right: 10px;"></i> Nairobi</p>
+                </div>
+                <form action="mailto:ericwambua098@gmail.com" method="post" enctype="text/plain"
+                    style="display: flex; flex-direction: column; gap: 10px; width: 80%;" data-aos="fade-right"
+                    data-aos-duration="1000" data-aos-delay="1100">
+                    <input type="text" name="name" placeholder="Name" required
+                        style="padding: 10px; border: 1px solid rgb(109, 67, 0); border-radius: 5px; outline: none;">
+                    <input type="email" name="email" placeholder="Email" required
+                        style="padding: 10px; border: 1px solid rgb(109, 67, 0); border-radius: 5px; outline: none;">
+                    <textarea name="message" placeholder="Message" rows="5" required
+                        style="padding: 10px; border: 1px solid rgb(109, 67, 0); border-radius: 5px; outline: none; transition: 0.2s linear;"></textarea>
+                    <button type="submit"
+                        style="width: 100px; padding: 10px; background-color: rgb(109, 67, 0); color: white; border: none; border-radius: 5px; cursor: pointer; margin: 0;">Send</button>
+                </form>
+
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200"
+                    style="margin-top: 20px;">
+                    <a href="https://www.instagram.com/hoodborn_visuals_media" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/hoodborn_visuals_media" target="_blank"
+                        title="hoodborn photographe"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/search/results/all/?keywords=Eric%20Wambua%20Ujuzi%20Techlabz"
+                        target="_blank" title="Eric (Ujuzi Techlabz) Wambua"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="main.png" alt="Contact Us">
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/254112394362" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script>
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+        function cancel() {
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-100%)"
+        }
+
+        // Typewriter Effect
+        const texts = [
+            "DEVELOPER",
+            "DESIGNER",
+            "YOUTUBER"
+        ];
+        let speed = 100;
+        const textElements = document.querySelector(".typewriter span");
+        let textIndex = 0;
+        let charIndex = 0;
+
+        function typeWriter() {
+            if (charIndex < texts[textIndex].length) {
+                textElements.innerHTML += texts[textIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(typeWriter, speed);
+            } else {
+                setTimeout(eraseText, 1000);
+            }
+        }
+
+        function eraseText() {
+            if (textElements.innerHTML.length > 0) {
+                textElements.innerHTML = textElements.innerHTML.slice(0, -1);
+                setTimeout(eraseText, 50);
+            } else {
+                textIndex = (textIndex + 1) % texts.length;
+                charIndex = 0;
+                setTimeout(typeWriter, 500);
+            }
+        }
+
+        window.onload = typeWriter;
+    </script>
+
+</body>
+
+</html>

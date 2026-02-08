@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Contact Us - Eric Wambua</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Eric</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a
+                        href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a
+                        href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a
+                        href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a
+                        href="services.html">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="550">
+                    <a href="Eric_Wambua_CV.pdf" download>Download CV</a>
+                </div>
+
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a
+                        href="contact.html">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="services.html">Services</a>
+                <a href="Eric_Wambua_CV.pdf" download>Download CV</a>
+                <a href="contact.html">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Contact <span>Me</span></h1>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    Get in touch with me:
+                </p>
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1050"
+                    style="margin-bottom: 20px;">
+                    <p style="margin: 5px 0;"><i class="fa-solid fa-envelope"
+                            style="color: rgb(109, 67, 0); margin-right: 10px;"></i> ericwambua098@gmail.com</p>
+                    <p style="margin: 5px 0;"><i class="fa-solid fa-phone"
+                            style="color: rgb(109, 67, 0); margin-right: 10px;"></i> +254 112 394 362</p>
+                    <p style="margin: 5px 0;"><i class="fa-solid fa-location-dot"
+                            style="color: rgb(109, 67, 0); margin-right: 10px;"></i> Nairobi</p>
+                </div>
+                <form style="display: flex; flex-direction: column; gap: 10px; width: 80%;" data-aos="fade-right"
+                    data-aos-duration="1000" data-aos-delay="1100">
+                    <input type="text" placeholder="Name"
+                        style="padding: 10px; border: 1px solid rgb(109, 67, 0); border-radius: 5px; outline: none;">
+                    <input type="email" placeholder="Email"
+                        style="padding: 10px; border: 1px solid rgb(109, 67, 0); border-radius: 5px; outline: none;">
+                    <textarea placeholder="Message" rows="5"
+                        style="padding: 10px; border: 1px solid rgb(109, 67, 0); border-radius: 5px; outline: none; transition: 0.2s linear;"></textarea>
+                    <button
+                        style="width: 100px; padding: 10px; background-color: rgb(109, 67, 0); color: white; border: none; border-radius: 5px; cursor: pointer; margin: 0;">Send</button>
+                </form>
+
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200"
+                    style="margin-top: 20px;">
+                    <a href="https://www.instagram.com/hoodborn_visuals_media" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/hoodborn_visuals_media" target="_blank"
+                        title="hoodborn photographe"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/search/results/all/?keywords=Eric%20Wambua%20Ujuzi%20Techlabz"
+                        target="_blank" title="Eric (Ujuzi Techlabz) Wambua"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="main.png" alt="Contact Us">
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script>
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+        function cancel() {
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
+    </script>
+</body>
+
+</html>
