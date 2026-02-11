@@ -997,11 +997,19 @@ textarea:focus {
 /* Responsive Design */
 @media (max-width: 991px) {
     section {
-        padding: 50px 6% 40px 6%;
+        padding: 40px 6% 30px 6%;
         min-height: auto;
     }
 
-    .main-container {
+    #home .main-container {
+        flex-direction: column-reverse !important;
+        text-align: center;
+        gap: 30px;
+        padding-top: 20px;
+    }
+
+    /* Keep other sections normal column */
+    section:not(#home) .main-container {
         flex-direction: column !important;
         text-align: center;
         gap: 35px;
@@ -1016,73 +1024,83 @@ textarea:focus {
     }
 
     .meet-text {
-        font-size: 1rem;
+        font-size: 0.9rem;
         letter-spacing: 2px;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 
     .hero-title {
-        font-size: clamp(2rem, 8vw, 2.8rem);
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
         line-height: 1.2;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+        max-width: 100%;
     }
 
     .hero-description {
-        font-size: 1rem;
-        line-height: 1.6;
-        margin-bottom: 30px;
-        padding: 0 10px;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 25px;
+        padding: 0;
     }
 
     .hero-btns {
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
         width: 100%;
         align-items: center;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
     }
 
     .primary-btn {
         width: 100%;
-        max-width: 280px;
-        padding: 14px 30px;
+        max-width: 260px;
+        padding: 12px 25px;
     }
 
     .secondary-btn {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+    }
+
+    .expertise-area {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .expertise-area p {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
+        margin-bottom: 10px;
     }
 
     .expertise-icons {
-        gap: 15px;
-        font-size: 1.5rem;
+        gap: 12px;
+        font-size: 1.4rem;
+        justify-content: center;
     }
 
     .image-wrapper {
-        margin-top: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
     }
 
     .hero-image {
-        max-width: 320px;
+        max-width: 280px;
     }
 
     .hero-bottom-bar {
-        position: relative;
-        bottom: 0;
-        left: 0;
-        margin: 50px auto 0 auto;
+        position: static;
+        margin: 40px auto 0 auto;
         justify-content: center;
         width: fit-content;
-        font-size: 0.8rem;
-        padding: 8px 18px;
+        font-size: 0.75rem;
+        padding: 6px 15px;
+        background: rgba(255, 255, 255, 0.4);
     }
 
     .about-stats-grid {
         grid-template-columns: 1fr;
-        max-width: 280px;
+        max-width: 260px;
         margin: 0 auto 30px;
     }
 
@@ -1094,7 +1112,7 @@ textarea:focus {
 
     .contact-grid {
         grid-template-columns: 1fr !important;
-        gap: 35px;
+        gap: 30px;
     }
 
     .nav-container .links {
@@ -1110,42 +1128,36 @@ textarea:focus {
         flex-direction: column;
         align-items: center;
         padding-top: 40px;
-        gap: 20px;
+        gap: 15px;
     }
 
     .dropdown .links a {
-        font-size: 1.3rem;
-        margin: 0;
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 480px) {
     section {
-        padding: 40px 5% 30px 5%;
+        padding: 30px 5% 20px 5%;
     }
 
     .hero-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
-    .hero-description {
-        font-size: 0.95rem;
+    .hero-image {
+        max-width: 240px;
     }
 
     .stat-number {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .whatsapp-float {
-        width: 45px;
-        height: 45px;
-        bottom: 15px;
-        right: 15px;
-        font-size: 22px;
-    }
-
-    .primary-btn {
-        padding: 12px 25px;
-        font-size: 0.95rem;
+        width: 40px;
+        height: 40px;
+        bottom: 10px;
+        right: 10px;
+        font-size: 20px;
     }
 }
