@@ -429,57 +429,6 @@ section {
     mix-blend-mode: multiply;
 }
 
-/* Circular Text Animation */
-.circular-text {
-    position: absolute;
-    bottom: 20px;
-    right: 0;
-    width: 120px;
-    height: 120px;
-    background: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.circular-text:hover {
-    transform: scale(1.1);
-}
-
-.circular-text .text {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    font-size: 0.7rem;
-    font-weight: 800;
-    color: rgb(109, 67, 0);
-    animation: rotateText 10s linear infinite;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 2px;
-}
-
-@keyframes rotateText {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.circular-text .arrow {
-    font-size: 1.5rem;
-    color: rgb(109, 67, 0);
-    transform: rotate(-45deg);
-}
-
 /* Hero Bottom Bar */
 .hero-bottom-bar {
     position: absolute;
@@ -1080,13 +1029,6 @@ textarea:focus {
     .primary-btn {
         width: 100%;
         max-width: 300px;
-    }
-
-    .circular-text {
-        width: 100px;
-        height: 100px;
-        bottom: 10px;
-        right: 10px;
     }
 
     .hero-bottom-bar {
