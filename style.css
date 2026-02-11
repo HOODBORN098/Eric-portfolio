@@ -336,33 +336,45 @@ button:hover {
 .skill-info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 8px;
     font-weight: 500;
 }
 
-.progress-line {
-    width: 100%;
-    height: 8px;
-    background: rgba(109, 67, 0, 0.1);
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
+/* Proficiency Badges */
+.badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.3s ease;
+    cursor: default;
 }
 
-.progress-line span {
-    height: 100%;
-    display: block;
-    background: linear-gradient(90deg, rgb(109, 67, 0), rgb(180, 120, 40));
-    border-radius: 10px;
-    position: relative;
-    transition: 1s cubic-bezier(1, 0, 0.5, 1);
-    transform: scaleX(0);
-    transform-origin: left;
+.badge.expert {
+    background: linear-gradient(135deg, rgba(109, 67, 0, 0.2), rgba(180, 120, 40, 0.4));
+    color: rgb(109, 67, 0);
+    box-shadow: 0 0 10px rgba(109, 67, 0, 0.2);
 }
 
-/* Animate progress on AOS section entry */
-[data-aos="fade-up"].aos-animate .progress-line span {
-    transform: scaleX(1);
+.badge.advanced {
+    background: linear-gradient(135deg, rgba(100, 100, 100, 0.2), rgba(150, 150, 150, 0.4));
+    color: #444;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.badge.fluent {
+    background: rgba(255, 255, 255, 0.3);
+    color: #666;
+}
+
+.skill-category:hover .badge.expert {
+    box-shadow: 0 0 15px rgba(109, 67, 0, 0.4);
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
