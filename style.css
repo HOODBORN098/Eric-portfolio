@@ -303,17 +303,33 @@ section {
 /* Hero Specific Enhancements */
 .meet-text {
     font-family: 'Outfit', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 800;
     color: #666;
     text-transform: uppercase;
     letter-spacing: 4px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .meet-text span {
     color: rgb(109, 67, 0);
     position: relative;
+}
+
+.typewriter-container {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.typewriter {
+    color: rgb(109, 67, 0);
+    font-weight: 700;
 }
 
 .hero-title {
@@ -984,9 +1000,15 @@ textarea:focus {
     }
 
     .meet-text {
-        font-size: 1.1rem;
-        letter-spacing: 3px;
-        margin-bottom: 12px;
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        margin-bottom: 8px;
+    }
+
+    .typewriter-container {
+        font-size: 1rem;
+        justify-content: center;
+        margin-bottom: 15px;
     }
 
     .hero-title {
