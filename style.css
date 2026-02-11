@@ -997,14 +997,14 @@ textarea:focus {
 /* Responsive Design */
 @media (max-width: 991px) {
     section {
-        padding: 60px 5% 40px 5%;
+        padding: 50px 6% 40px 6%;
         min-height: auto;
     }
 
     .main-container {
         flex-direction: column !important;
         text-align: center;
-        gap: 40px;
+        gap: 35px;
     }
 
     .image-wrapper,
@@ -1015,8 +1015,23 @@ textarea:focus {
         align-items: center;
     }
 
+    .meet-text {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
     .hero-title {
-        font-size: 2.8rem;
+        font-size: clamp(2rem, 8vw, 2.8rem);
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        padding: 0 10px;
     }
 
     .hero-btns {
@@ -1024,46 +1039,62 @@ textarea:focus {
         gap: 15px;
         width: 100%;
         align-items: center;
+        margin-bottom: 40px;
     }
 
     .primary-btn {
         width: 100%;
-        max-width: 300px;
+        max-width: 280px;
+        padding: 14px 30px;
+    }
+
+    .secondary-btn {
+        font-size: 0.95rem;
+    }
+
+    .expertise-area p {
+        font-size: 0.8rem;
+    }
+
+    .expertise-icons {
+        gap: 15px;
+        font-size: 1.5rem;
+    }
+
+    .image-wrapper {
+        margin-top: 20px;
+    }
+
+    .hero-image {
+        max-width: 320px;
     }
 
     .hero-bottom-bar {
         position: relative;
         bottom: 0;
         left: 0;
-        margin-top: 40px;
+        margin: 50px auto 0 auto;
         justify-content: center;
-        width: 100%;
-    }
-
-    .content .social-links,
-    .content .social-links-minimal {
-        justify-content: center !important;
-    }
-
-    .content .btn {
-        margin-top: 20px;
+        width: fit-content;
+        font-size: 0.8rem;
+        padding: 8px 18px;
     }
 
     .about-stats-grid {
         grid-template-columns: 1fr;
-        max-width: 300px;
+        max-width: 280px;
         margin: 0 auto 30px;
     }
 
     .skills-wrapper,
     .services-wrapper {
         grid-template-columns: 1fr !important;
-        gap: 20px;
+        gap: 15px;
     }
 
     .contact-grid {
         grid-template-columns: 1fr !important;
-        gap: 40px;
+        gap: 35px;
     }
 
     .nav-container .links {
@@ -1078,29 +1109,43 @@ textarea:focus {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 50px;
+        padding-top: 40px;
+        gap: 20px;
     }
 
     .dropdown .links a {
-        font-size: 1.5rem;
-        margin: 15px 0;
+        font-size: 1.3rem;
+        margin: 0;
     }
 }
 
 @media (max-width: 480px) {
-    .content h1 {
-        font-size: 2rem;
+    section {
+        padding: 40px 5% 30px 5%;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
     }
 
     .stat-number {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .whatsapp-float {
-        width: 50px;
-        height: 50px;
-        bottom: 20px;
-        right: 20px;
-        font-size: 25px;
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 22px;
+    }
+
+    .primary-btn {
+        padding: 12px 25px;
+        font-size: 0.95rem;
     }
 }
