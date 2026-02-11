@@ -820,11 +820,51 @@ textarea:focus {
     }
 }
 
-/* Media Queries */
+/* Responsive Design */
 @media (max-width: 991px) {
     section {
-        padding: 50px 3%;
+        padding: 60px 5% 40px 5%;
         min-height: auto;
+    }
+
+    .main-container {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .image,
+    .content {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content .social-links,
+    .content .social-links-minimal {
+        justify-content: center !important;
+    }
+
+    .content .btn {
+        margin-top: 20px;
+    }
+
+    .about-stats-grid {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        margin: 0 auto 30px;
+    }
+
+    .skills-wrapper,
+    .services-wrapper {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 40px;
     }
 
     .nav-container .links {
@@ -835,64 +875,26 @@ textarea:focus {
         display: block;
     }
 
-    .main-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .image,
-    .content {
-        width: 100%;
-    }
-
-    .image {
-        order: 1;
-        /* Image after content on mobile usually, or keep it top? Default is top if source order is image first. */
-        margin-bottom: 30px;
-    }
-
-    /* If we want image first on desktop but bottom on mobile, we can use flex order. */
-    /* Let's keep image top for now or allow natural flow. */
-    /* Adjusting order specifically if sections differ */
-    #home .main-container {
-        flex-direction: column-reverse;
-        /* Content top, image bottom on mobile */
-    }
-
-    #about .main-container {
-        flex-direction: column;
-    }
-
-    .content h1 {
-        font-size: 2.5rem;
-    }
-
-    .logo {
-        position: absolute;
-        left: 20px;
-        top: 20px;
-    }
-
-    .contact-info {
-        text-align: left;
-        /* Keep contact notes aligned left or center? */
-        display: inline-block;
-        margin-top: 20px;
-    }
-
-    form {
-        width: 100%;
-    }
-
-    .social-links {
-        justify-content: center;
+    .dropdown .links {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .dropdown .links a {
+        font-size: 1.5rem;
+        margin: 15px 0;
     }
 }
 
 @media (max-width: 480px) {
-    html {
-        font-size: 14px;
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
     }
 
     .whatsapp-float {
