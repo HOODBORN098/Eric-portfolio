@@ -232,7 +232,7 @@ section {
 .meet-text {
     font-family: 'Outfit', sans-serif;
     font-size: 4.5rem;
-    /* 🚀 INCREASED for desktop */
+    /* 🚀 Desktop size */
     font-weight: 800;
     color: #666;
     text-transform: uppercase;
@@ -930,6 +930,11 @@ button:hover {
         flex-direction: column !important;
         text-align: center;
         gap: 35px;
+    }
+
+    /* ✅ FIX: Home section – image first, text below */
+    #home .main-container {
+        flex-direction: column-reverse !important;
     }
 
     .content,
