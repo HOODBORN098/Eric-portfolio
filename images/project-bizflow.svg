@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="426" viewBox="0 0 480 426">
+  <defs>
+    <linearGradient id="bf-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c18f59"/>
+      <stop offset="1" stop-color="#8a5f33"/>
+    </linearGradient>
+    <clipPath id="bf-round">
+      <rect width="480" height="426" rx="14"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#bf-round)">
+    <rect width="480" height="426" fill="url(#bf-bg)"/>
+
+    <!-- Browser chrome -->
+    <rect width="480" height="34" fill="#5e3f20"/>
+    <circle cx="18" cy="17" r="4.5" fill="#ef4444"/>
+    <circle cx="34" cy="17" r="4.5" fill="#f59e0b"/>
+    <circle cx="50" cy="17" r="4.5" fill="#22c55e"/>
+    <rect x="80" y="9" width="320" height="16" rx="8" fill="#6e4a26"/>
+    <text x="95" y="20.5" font-family="Arial, sans-serif" font-size="10" fill="#f0ddc4">bizflow-website.vercel.app</text>
+
+    <!-- Top nav -->
+    <rect x="0" y="34" width="480" height="46" fill="#ffffff"/>
+    <text x="20" y="62" font-family="Georgia, serif" font-weight="700" font-size="17" fill="#8a5f33">BizFlow</text>
+    <text x="120" y="61" font-family="Arial, sans-serif" font-size="10" fill="#6b7280">Bookings</text>
+    <text x="190" y="61" font-family="Arial, sans-serif" font-size="10" fill="#6b7280">Clients</text>
+    <text x="250" y="61" font-family="Arial, sans-serif" font-size="10" fill="#6b7280">Services</text>
+    <rect x="395" y="46" width="66" height="22" rx="6" fill="#c18f59"/>
+    <text x="406" y="60.5" font-family="Arial, sans-serif" font-size="9.5" fill="#fff" font-weight="600">+ Booking</text>
+
+    <!-- Section heading -->
+    <text x="20" y="106" font-family="Georgia, serif" font-weight="700" font-size="15" fill="#ffffff">This Week's Schedule</text>
+    <text x="20" y="124" font-family="Arial, sans-serif" font-size="9.5" fill="#f3e3cf">Multi-tenant booking calendar for service businesses</text>
+
+    <!-- Calendar card -->
+    <rect x="20" y="140" width="440" height="252" rx="10" fill="#ffffff"/>
+
+    <!-- Day headers -->
+    <text x="40" y="160" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#6b7280">MON</text>
+    <text x="125" y="160" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#6b7280">TUE</text>
+    <text x="210" y="160" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#6b7280">WED</text>
+    <text x="295" y="160" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#c18f59">THU</text>
+    <text x="380" y="160" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#6b7280">FRI</text>
+
+    <line x1="36" y1="170" x2="36" y2="378" stroke="#eee" stroke-width="1"/>
+    <line x1="120" y1="170" x2="120" y2="378" stroke="#eee" stroke-width="1"/>
+    <line x1="204" y1="170" x2="204" y2="378" stroke="#eee" stroke-width="1"/>
+    <line x1="288" y1="170" x2="288" y2="378" stroke="#eee" stroke-width="1"/>
+    <line x1="372" y1="170" x2="372" y2="378" stroke="#eee" stroke-width="1"/>
+    <line x1="456" y1="170" x2="456" y2="378" stroke="#eee" stroke-width="1"/>
+
+    <!-- Booking blocks -->
+    <rect x="40" y="178" width="74" height="34" rx="5" fill="#fde8cf"/>
+    <text x="46" y="190" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="#8a5f33">9:00 Haircut</text>
+    <text x="46" y="200" font-family="Arial, sans-serif" font-size="7" fill="#a3784b">J. Mwangi</text>
+
+    <rect x="40" y="220" width="74" height="34" rx="5" fill="#e7f3ec"/>
+    <text x="46" y="232" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="#1f7a4d">11:30 Spa</text>
+    <text x="46" y="242" font-family="Arial, sans-serif" font-size="7" fill="#4c8f6c">A. Otieno</text>
+
+    <rect x="124" y="178" width="74" height="34" rx="5" fill="#e8eefc"/>
+    <text x="130" y="190" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="#2c4ea3">10:00 Consult</text>
+    <text x="130" y="200" font-family="Arial, sans-serif" font-size="7" fill="#5b76b8">S. Kamau</text>
+
+    <rect x="208" y="200" width="74" height="34" rx="5" fill="#fde8cf"/>
+    <text x="214" y="212" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="#8a5f33">1:00 Massage</text>
+    <text x="214" y="222" font-family="Arial, sans-serif" font-size="7" fill="#a3784b">P. Njeri</text>
+
+    <rect x="292" y="178" width="74" height="34" rx="5" fill="#c18f59"/>
+    <text x="298" y="190" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="#fff">9:30 Dental</text>
+    <text x="298" y="200" font-family="Arial, sans-serif" font-size="7" fill="#fbe8d2">M. Achieng</text>
+
+    <rect x="292" y="220" width="74" height="34" rx="5" fill="#e7f3ec"/>
+    <text x="298" y="232" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="#1f7a4d">2:00 Therapy</text>
+    <text x="298" y="242" font-family="Arial, sans-serif" font-size="7" fill="#4c8f6c">D. Wafula</text>
+
+    <rect x="376" y="190" width="74" height="34" rx="5" fill="#e8eefc"/>
+    <text x="382" y="202" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="#2c4ea3">11:00 Fitting</text>
+    <text x="382" y="212" font-family="Arial, sans-serif" font-size="7" fill="#5b76b8">R. Kiptoo</text>
+
+    <rect x="40" y="270" width="74" height="34" rx="5" fill="#e8eefc"/>
+    <text x="46" y="282" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="#2c4ea3">3:30 Trim</text>
+    <text x="46" y="292" font-family="Arial, sans-serif" font-size="7" fill="#5b76b8">L. Chebet</text>
+
+    <rect x="208" y="280" width="74" height="34" rx="5" fill="#fde8cf"/>
+    <text x="214" y="292" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="#8a5f33">4:00 Facial</text>
+    <text x="214" y="302" font-family="Arial, sans-serif" font-size="7" fill="#a3784b">N. Wanjiru</text>
+
+    <rect x="376" y="260" width="74" height="34" rx="5" fill="#e7f3ec"/>
+    <text x="382" y="272" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="#1f7a4d">1:30 Yoga</text>
+    <text x="382" y="282" font-family="Arial, sans-serif" font-size="7" fill="#4c8f6c">Group · 8</text>
+
+    <!-- Bottom stat strip -->
+    <rect x="40" y="340" width="400" height="30" rx="7" fill="#faf5ee"/>
+    <text x="54" y="359" font-family="Arial, sans-serif" font-size="9" fill="#6b7280">This week</text>
+    <text x="140" y="359" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#8a5f33">32 bookings</text>
+    <text x="250" y="359" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#15803d">96% filled</text>
+    <text x="360" y="359" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#2c4ea3">12 tenants</text>
+  </g>
+  <rect x="0.75" y="0.75" width="478.5" height="424.5" rx="13.25" fill="none" stroke="#5e3f20" stroke-width="1.5"/>
+</svg>
