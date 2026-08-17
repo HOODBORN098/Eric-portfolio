@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ericwambua.vercel.app/sitemap.xml
+Sitemap: https://ericwambua.dev/sitemap.xml
