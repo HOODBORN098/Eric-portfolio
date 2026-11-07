@@ -7,15 +7,18 @@
 /* Fonts */
 @font-face {
   font-family: 'Calisto-MT';
-  src: url(../fonts/Calisto-MT.ttf); }
+  src: url(../fonts/Calisto-MT.ttf);
+  font-display: swap; }
 
 @font-face {
   font-family: 'Calisto-MT-Italic';
-  src: url(../fonts/Calisto-MT-Italic.ttf); }
+  src: url(../fonts/Calisto-MT-Italic.ttf);
+  font-display: swap; }
 
 @font-face {
   font-family: 'Calisto-MT-Bold';
-  src: url(../fonts/Calisto-MT-Bold.ttf); }
+  src: url(../fonts/Calisto-MT-Bold.ttf);
+  font-display: swap; }
 
 /* Colors */
 /* Universal style */
@@ -152,7 +155,7 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-  background-image: url("../images/top-banner-bckg.jpg");
+  background-image: url("../images/top-banner-bckg.webp");
   background-position: center;
   background-size: cover; }
   .fh5co-top-banner::after {
@@ -223,6 +226,14 @@
   .top-banner__inner .top-banner__text-down {
     margin-bottom: 20px;
     padding-left: 27%; }
+    .top-banner__inner .top-banner__text-down .top-banner__role {
+      margin-bottom: 10px;
+      color: #c18f59;
+      font-size: 24px;
+      line-height: 1.3; }
+      @media (max-width: 768px) {
+        .top-banner__inner .top-banner__text-down .top-banner__role {
+          font-size: 18px; } }
     .top-banner__inner .top-banner__text-down .top-banner__h2 {
       margin-bottom: 10px; }
       @media (max-width: 768px) {
@@ -275,7 +286,7 @@
 
 .about-me-bckg {
   position: absolute;
-  background-image: url("../images/about-me-bckg.jpg");
+  background-image: url("../images/about-me-bckg.webp");
   background-position: center;
   background-size: cover;
   height: 500px;
@@ -528,7 +539,7 @@
   position: relative;
   margin-bottom: 122px;
   padding: 100px 0;
-  background-image: url("../images/book-bckg.jpg");
+  background-image: url("../images/book-bckg.webp");
   background-size: cover;
   background-position: center; }
   .fh5co-counter::after {
@@ -683,7 +694,7 @@
   position: relative;
   padding: 135px 0 172px;
   text-align: center;
-  background-image: url("../images/quotes-bckg.jpg");
+  background-image: url("../images/quotes-bckg.webp");
   background-position: center;
   background-size: cover; }
   .fh5co-quotes::after {
@@ -738,7 +749,7 @@
 .fh5co-social {
   position: relative;
   padding: 63px 0;
-  background-image: url("../images/social-bckg.jpg");
+  background-image: url("../images/social-bckg.webp");
   background-size: cover;
   background-position: center; }
   .fh5co-social::after {
@@ -943,12 +954,14 @@
   transition: 0.3s ease; }
   .skill-card:hover {
     background-color: #c18f59; }
+    .skill-card:hover h3,
     .skill-card:hover h4 {
       color: #fff; }
     .skill-card:hover span {
       color: #fff; }
     .skill-card:hover p {
       color: #fff; }
+  .skill-card h3,
   .skill-card h4 {
     margin-bottom: 8px;
     font-size: 24px;
@@ -965,6 +978,7 @@
   @media (max-width: 992px) {
     .skill-card {
       padding: 30px 25px; }
+      .skill-card h3,
       .skill-card h4 {
         font-size: 20px; } }
   @media (max-width: 620px) {
@@ -973,3 +987,7 @@
       gap: 20px; }
     .skill-card {
       min-width: 100%; } }
+
+.services-contact {
+  margin-top: 32px;
+  text-align: center; }

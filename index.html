@@ -12,11 +12,22 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Eric Wambua is a Nairobi-based full-stack web developer, AI engineer, network technician, and cybersecurity consultant building modern web applications and digital solutions.">
+	<meta name="description" content="Eric Wambua is a Nairobi, Kenya full-stack web developer and AI engineer building React, Node.js, and M-PESA web applications, with networking and cybersecurity experience.">
 	<link rel="canonical" href="https://ericwambua.dev/">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ericwambua.dev/">
+	<meta property="og:title" content="Eric Wambua | Nairobi Full-Stack Developer &amp; AI Engineer">
+	<meta property="og:description" content="Nairobi-based full-stack web developer and AI engineer building React, Node.js, and M-PESA web applications. Explore Eric Wambua’s work and projects.">
+	<meta property="og:image" content="https://ericwambua.dev/images/eric-photo-hero.png">
+	<meta property="og:image:alt" content="Eric Wambua, Nairobi-based full-stack developer and AI engineer">
+	<meta property="og:locale" content="en_KE">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Eric Wambua | Nairobi Full-Stack Developer &amp; AI Engineer">
+	<meta name="twitter:description" content="Nairobi-based full-stack web developer and AI engineer building React, Node.js, and M-PESA web applications.">
+	<meta name="twitter:image" content="https://ericwambua.dev/images/eric-photo-hero.png">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/slick.css">
-	<title>Eric Wambua - Portfolio</title>
+	<title>Eric Wambua | Nairobi Full-Stack Developer &amp; AI Engineer</title>
 
 	<!-- Favicon -->
 	<link rel="icon" href="favicon.ico" sizes="any">
@@ -33,13 +44,22 @@
 		"@context": "https://schema.org",
 		"@graph": [
 			{
+				"@type": "WebSite",
+				"@id": "https://ericwambua.dev/#website",
+				"url": "https://ericwambua.dev/",
+				"name": "Eric Wambua",
+				"description": "Portfolio of Eric Wambua, a Nairobi-based full-stack web developer and AI engineer.",
+				"inLanguage": "en-KE",
+				"publisher": { "@id": "https://ericwambua.dev/#person" }
+			},
+			{
 				"@type": "Person",
 				"@id": "https://ericwambua.dev/#person",
 				"name": "Eric Wambua",
-				"jobTitle": "Full-Stack Developer",
-				"description": "A Nairobi-based full-stack web developer, AI engineer, network technician, and cybersecurity consultant building high-performance web applications and digital solutions.",
+				"jobTitle": ["Full-Stack Developer", "AI Engineer", "Network Technician", "Cybersecurity Consultant"],
+				"description": "Nairobi-based full-stack web developer and AI engineer building React, Node.js, and M-PESA web applications, with networking and cybersecurity experience.",
 				"url": "https://ericwambua.dev/",
-				"image": "https://ericwambua.dev/images/eric-photo-hero.jpeg",
+				"image": "https://ericwambua.dev/images/eric-photo-hero.png",
 				"email": "ericwambua098@gmail.com",
 				"telephone": "+254112394362",
 				"address": {
@@ -57,6 +77,9 @@
 					"Express",
 					"Tailwind CSS",
 					"AI Engineering",
+					"M-PESA Daraja API integration",
+					"E-commerce development",
+					"SaaS development",
 					"Cybersecurity",
 					"Networking"
 				],
@@ -108,11 +131,12 @@
 	<!-- Navigation -->
 	<nav class="site-navigation">
 		<div class="site-navigation-inner site-container">
-			<img src="./images/site-logo.png" alt="site logo">
+			<img src="./images/site-logo.png" alt="Eric Wambua">
 			<div class="main-navigation">
 				<ul class="main-navigation__ul">
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
 					<li><a href="#skills">Skills</a></li>
 					<li><a href="#projects">Projects</a></li>
 					<li><a href="#contact">Contact</a></li>
@@ -133,23 +157,24 @@
 	</nav>
 	<!-- Navigation end -->
 
+	<main id="main-content">
 	<!-- Top banner -->
 	<section class="fh5co-top-banner" id="home">
 		<div class="top-banner__inner site-container">
 			<div class="top-banner__image">
-				<img src="./images/eric-photo-hero.jpeg" alt="Eric Wambua">
+				<img src="./images/eric-photo-hero.webp" alt="Eric Wambua, full-stack web developer in Nairobi" width="1000" height="1430" fetchpriority="high">
 			</div>
 			<div class="top-banner__text">
 				<div class="top-banner__text-up">
 					<span class="brand-span">Hello! I'm</span>
-					<h2 class="top-banner__h2">Eric</h2>
+					<h1 class="top-banner__h2">Eric<br>Wambua</h1>
 				</div>
 				<div class="top-banner__text-down">
-					<h2 class="top-banner__h2">Wambua</h2>
-					<span class="brand-span">Full-Stack Developer, AI Engineer, Network Technician, Cybersecurity Consultant</span>
+					<h2 class="top-banner__role">Full-Stack Web Developer in Nairobi, Kenya</h2>
+					<p class="brand-span">React and Node.js web apps, M-PESA integrations, AI, networking, and cybersecurity.</p>
 				</div>
-				<p>A Nairobi-based full-stack web developer, AI engineer, network technician, and cybersecurity consultant, building high-performance websites and modern digital solutions for the Kenyan market.</p>
-				<a href="#about" class="brand-button">Read bio > </a>
+				<p>I’m Eric Wambua, a Nairobi-based full-stack developer building websites and custom web applications with React, Node.js, and Express. I also integrate Safaricom M-PESA Daraja API and WhatsApp Cloud API for Kenyan businesses, with additional experience in AI engineering, networking, and cybersecurity.</p>
+				<a href="#services" class="brand-button">Explore services &gt;</a>
 			</div>
 		</div>
 	</section>
@@ -160,21 +185,21 @@
 		<div class="about-me-inner site-container">
 			<article class="portfolio-wrapper">
 				<div class="portfolio__img">
-					<img src="./images/eric-photo-about.png" class="about-me__profile" alt="Eric Wambua profile picture">
+					<img src="./images/eric-photo-about.webp" class="about-me__profile" alt="Eric Wambua profile picture" width="720" height="859" loading="lazy" decoding="async">
 				</div>
 				<div class="portfolio__bottom">
 					<div class="portfolio__name">
 						<span>E</span>
 						<h2 class="universal-h2">ric Wambua</h2>
 					</div>
-					<p>Eric Wambua is a Nairobi-based full-stack web developer, AI engineer, network technician, and cybersecurity consultant.</p>
+					<p>Eric Wambua is a Nairobi, Kenya web developer focused on full-stack applications, API integrations, and practical digital solutions.</p>
 				</div>
 			</article>
 			<div class="about-me__text">
 				<div class="about-me-slider">
 					<div class="about-me-single-slide">
 						<h2 class="universal-h2 universal-h2-bckg">About me</h2>
-						<p class="p-white"><span>I</span> am a Nairobi-based full-stack web developer, AI engineer, network technician, and cybersecurity consultant obsessed with high-performance digital experiences. I bridge the gap between complex backend logic, intelligent systems, and secure, reliable infrastructure. My mission is to build software that doesn't just work but inspires, with a focus on solutions built for the Kenyan market.</p>
+						<p class="p-white"><span>I</span> am a Nairobi-based full-stack web developer and AI engineer building digital products for the Kenyan market. My work brings together frontend design, backend development, intelligent systems, and secure, reliable infrastructure.</p>
 						<h4>Full-Stack Developer</h4>
 						<p class="p-white">3+ Years Experience &middot; 100% Client Satisfaction</p>
 					</div>
@@ -191,68 +216,98 @@
 	</section>
 	<!-- About me end -->
 
+	<!-- Services -->
+	<section class="fh5co-blog" id="services">
+		<div class="site-container">
+			<h2 class="universal-h2 universal-h2-bckg">Web Development Services in Nairobi</h2>
+			<div class="skills-grid">
+				<div class="skill-card">
+					<h3>Website &amp; Web Application Development</h3>
+					<p>I build responsive websites and custom web applications with React, Vite, Node.js, and Express for businesses in Nairobi and across Kenya.</p>
+					<a href="nairobi-web-development.html">Website development details</a>
+				</div>
+				<div class="skill-card">
+					<h3>M-PESA &amp; API Integrations</h3>
+					<p>I integrate Safaricom M-PESA Daraja API and WhatsApp Cloud API with web applications to support Kenyan payment and messaging workflows.</p>
+					<a href="mpesa-api-integration-kenya.html">M-PESA integration details</a>
+				</div>
+				<div class="skill-card">
+					<h3>AI, Networking &amp; Cybersecurity</h3>
+					<p>I also work across AI engineering, computer networking, and cybersecurity. Contact me to discuss a project and confirm the right scope.</p>
+					<a href="ai-networking-cybersecurity-kenya.html">Related technical services</a>
+				</div>
+			</div>
+			<p class="services-contact"><a href="#contact" class="brand-button">Discuss a project</a></p>
+		</div>
+	</section>
+	<!-- Services end -->
+
 	<!-- Projects -->
 	<section class="fh5co-books" id="projects">
 		<div class="site-container">
-			<h2 class="universal-h2 universal-h2-bckg">My Projects</h2>
+			<h2 class="universal-h2 universal-h2-bckg">Selected Web Development Projects</h2>
 			<div class="books">
 				<div class="single-book">
-					<a href="https://fresh-cart-4btu.vercel.app/" target="_blank" class="single-book__img">
-						<img src="./images/project-freshcart.jpg" alt="FreshCart Ecommerce project screenshot">
+					<a href="https://fresh-cart-4btu.vercel.app/" target="_blank" rel="noopener noreferrer" class="single-book__img">
+						<img src="./images/project-freshcart.webp" alt="FreshCart e-commerce storefront project by Eric Wambua" width="1200" height="575" loading="lazy" decoding="async">
 						<div class="single-book_download">
-							<img src="./images/view-project.jpg" alt="view project icon">
+							<img src="./images/view-project.jpg" alt="">
 						</div>
 					</a>
 					<div class="single-book__body">
 						<h4 class="single-book__title">FreshCart Ecommerce</h4>
 						<span class="single-book__price">React &middot; Tailwind</span>
+						<p>An e-commerce storefront built with React and Tailwind CSS for browsing and buying products online.</p>
 						<div class="books-brand-button">
-							<a href="https://fresh-cart-4btu.vercel.app/" target="_blank" class="brand-button">View Project</a>
+							<a href="https://fresh-cart-4btu.vercel.app/" target="_blank" rel="noopener noreferrer" class="brand-button">View Project</a>
 						</div>
 					</div>
 				</div>
 				<div class="single-book">
-					<a href="https://malirent-website.vercel.app/" target="_blank" class="single-book__img">
-						<img src="./images/project-malirent.jpg" alt="MaliRent App project screenshot">
+					<a href="https://malirent-website.vercel.app/" target="_blank" rel="noopener noreferrer" class="single-book__img">
+						<img src="./images/project-malirent.webp" alt="MaliRent property management app project by Eric Wambua" width="1200" height="610" loading="lazy" decoding="async">
 						<div class="single-book_download">
-							<img src="./images/view-project.jpg" alt="view project icon">
+							<img src="./images/view-project.jpg" alt="">
 						</div>
 					</a>
 					<div class="single-book__body">
 						<h4 class="single-book__title">MaliRent App</h4>
 						<span class="single-book__price">React &middot; Node.js</span>
+						<p>A property management and rental application built with a React frontend and Node.js backend.</p>
 						<div class="books-brand-button">
-							<a href="https://malirent-website.vercel.app/" target="_blank" class="brand-button">View Project</a>
+							<a href="https://malirent-website.vercel.app/" target="_blank" rel="noopener noreferrer" class="brand-button">View Project</a>
 						</div>
 					</div>
 				</div>
 				<div class="single-book">
-					<a href="https://bizflowtech.co.ke/" target="_blank" class="single-book__img">
-						<img src="./images/project-bizflow.jpg" alt="BizFlow App project screenshot">
+					<a href="https://bizflowtech.co.ke/" target="_blank" rel="noopener noreferrer" class="single-book__img">
+						<img src="./images/project-bizflow.webp" alt="BizFlow multi-tenant SaaS project by Eric Wambua" width="1200" height="585" loading="lazy" decoding="async">
 						<div class="single-book_download">
-							<img src="./images/view-project.jpg" alt="view project icon">
+							<img src="./images/view-project.jpg" alt="">
 						</div>
 					</a>
 					<div class="single-book__body">
 						<h4 class="single-book__title">BizFlow App</h4>
 						<span class="single-book__price">Multi-tenant SaaS</span>
+						<p>A multi-tenant SaaS application for business management and workflow automation.</p>
 						<div class="books-brand-button">
-							<a href="https://bizflowtech.co.ke/" target="_blank" class="brand-button">View Project</a>
+							<a href="https://bizflowtech.co.ke/" target="_blank" rel="noopener noreferrer" class="brand-button">View Project</a>
 						</div>
 					</div>
 				</div>
 				<div class="single-book">
-					<a href="https://clamsystudio.co.ke/" target="_blank" class="single-book__img">
-						<img src="./images/project-clamsy.jpg" alt="Clamsy Studios project screenshot">
+					<a href="https://clamsystudio.co.ke/" target="_blank" rel="noopener noreferrer" class="single-book__img">
+						<img src="./images/project-clamsy.webp" alt="Clamsy Studios website project by Eric Wambua" width="1200" height="597" loading="lazy" decoding="async">
 						<div class="single-book_download">
-							<img src="./images/view-project.jpg" alt="view project icon">
+							<img src="./images/view-project.jpg" alt="">
 						</div>
 					</a>
 					<div class="single-book__body">
 						<h4 class="single-book__title">Clamsy Studios</h4>
 						<span class="single-book__price">Post-Production &amp; Editing</span>
+						<p>A website for a post-production and video editing studio.</p>
 						<div class="books-brand-button">
-							<a href="https://clamsystudio.co.ke/" target="_blank" class="brand-button">View Project</a>
+							<a href="https://clamsystudio.co.ke/" target="_blank" rel="noopener noreferrer" class="brand-button">View Project</a>
 						</div>
 					</div>
 				</div>
@@ -299,7 +354,7 @@
 	<!-- Skills -->
 	<section class="fh5co-blog" id="skills">
 		<div class="site-container">
-			<h2 class="universal-h2 universal-h2-bckg">My Skills</h2>
+			<h2 class="universal-h2 universal-h2-bckg">Web Development Skills &amp; Technologies</h2>
 			<div class="skills-grid">
 				<div class="skill-card">
 					<h4>Frontend Development</h4>
@@ -353,6 +408,7 @@
 	<!-- Social -->
 
 	<!-- Footer -->
+	</main>
 	<footer class="site-footer" id="contact">
 		<div class="site-container">
 			<div class="footer-inner">

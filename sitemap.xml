@@ -2,8 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ericwambua.dev/</loc>
-    <lastmod>2026-08-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-11-07</lastmod>
+  </url>
+  <url>
+    <loc>https://ericwambua.dev/nairobi-web-development.html</loc>
+    <lastmod>2026-11-07</lastmod>
+  </url>
+  <url>
+    <loc>https://ericwambua.dev/mpesa-api-integration-kenya.html</loc>
+    <lastmod>2026-11-07</lastmod>
+  </url>
+  <url>
+    <loc>https://ericwambua.dev/ai-networking-cybersecurity-kenya.html</loc>
+    <lastmod>2026-11-07</lastmod>
   </url>
 </urlset>
